@@ -42,6 +42,7 @@ endif
 let g:airline_symbols.space = "\ua0"
 
 set fillchars+=stl:\ ,stlnc:\
+let g:airline_theme = 'powerlineish'
 
 " VIM UI
 set cursorline
