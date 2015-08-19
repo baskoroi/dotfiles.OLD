@@ -32,7 +32,7 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
-" Powerline settings
+" Airline settings
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
@@ -40,6 +40,8 @@ if !exists('g:airline_symbols')
     let g:airline_symbols={}
 endif
 let g:airline_symbols.space = "\ua0"
+
+set fillchars+=stl:\ ,stlnc:\
 
 " VIM UI
 set cursorline
