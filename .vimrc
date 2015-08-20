@@ -94,6 +94,12 @@ let g:ctrlp_switch_buffer = 0
 " let g:ctrlp_working_path_mode = 0
 
 " ===============
+" ag.vim SETTINGS
+" ===============
+
+let g:ag_working_path_mode="r"
+
+" ===============
 " CUSTOM SETTINGS
 " ===============
 
