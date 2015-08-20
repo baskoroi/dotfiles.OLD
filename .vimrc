@@ -20,6 +20,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 
@@ -40,6 +42,7 @@ syntax on
 set relativenumber
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 " UI settings 
@@ -52,6 +55,13 @@ set showmatch
 " Searching
 set incsearch
 set hlsearch
+
+" Backup
+" set backup
+" set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" set backupskip=/tmp/*,/private/tmp/*
+" set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" set writebackup
 
 " ================
 " AIRLINE SETTINGS
@@ -74,6 +84,14 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Hide modified buffers
 set hidden
+
+" ===============
+" CTRL P SETTINGS
+" ===============
+
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+" let g:ctrlp_working_path_mode = 0
 
 " ===============
 " CUSTOM SETTINGS
