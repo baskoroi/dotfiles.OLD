@@ -12,6 +12,13 @@ vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
 
+" Settings for vim-airline
+nmap <leader>T :enew<CR>            " Open a new buffer / tab 
+nmap <leader>l :bnext<CR>           " Move to the next buffer
+nmap <leader>h :bprev<CR>           " Move to the previous buffer
+nmap <leader>bq :bp <BAR> bd #<CR>  " Close the current buffer
+nmap <leader>bl :ls<CR>             " List all open buffers and their status
+
 " Custom comma motion mappings
 nmap di, f,dT,
 nmap ci, f,cT,
