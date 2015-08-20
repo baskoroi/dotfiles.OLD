@@ -43,6 +43,13 @@ set expandtab
 " UI settings 
 set cursorline
 colorscheme candyman 
+set wildmenu
+set lazyredraw
+set showmatch
+
+" Searching
+set incsearch
+set hlsearch
 
 " ================
 " AIRLINE SETTINGS

@@ -13,11 +13,18 @@ vno <right> <Nop>
 vno <up> <Nop>
 
 " Settings for vim-airline
-nmap <leader>T :enew<CR>            " Open a new buffer / tab 
-nmap <leader>l :bnext<CR>           " Move to the next buffer
-nmap <leader>h :bprev<CR>           " Move to the previous buffer
-nmap <leader>bq :bp <BAR> bd #<CR>  " Close the current buffer
-nmap <leader>bl :ls<CR>             " List all open buffers and their status
+nmap <leader>T :enew<CR>                    " Open a new buffer / tab 
+nmap <leader>l :bnext<CR>                   " Move to the next buffer
+nmap <leader>h :bprev<CR>                   " Move to the previous buffer
+nmap <leader>bq :bp <BAR> bd #<CR>          " Close the current buffer
+nmap <leader>bl :ls<CR>                     " List all open buffers and their status
+
+" Mappings for search highlighting (default: enabled)
+nnoremap <leader><space> :nohlsearch<CR>    " Manually turn off search highlighting
+
+" Open .*rc files
+nnoremap <leader>ev :e $MYVIMRC<CR>
+nnoremap <leader>eb :e ~/.bashrc<CR>
 
 " Custom comma motion mappings
 nmap di, f,dT,
