@@ -133,3 +133,6 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 export TERM="xterm-256color"
+
+# For t (CLI to-do list)
+alias t='python ~/other-repos/t/t.py --task-dir ~/tasks --list tasks'

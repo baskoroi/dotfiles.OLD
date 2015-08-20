@@ -57,6 +57,13 @@ set showmatch
 set incsearch
 set hlsearch
 
+" Abbreviations (and typo fixes)
+:iabbrev bsk Baskoro Indrayana
+:iabbrev @@ baskoroindrayana@outlook.com
+:iabbrev ture true
+:iabbrev flase false
+:iabbrev falase false
+
 " Backup
 set undodir=~/.vim/tmp/undo//
 " set backupdir=~/.vim/tmp/backup//
