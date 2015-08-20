@@ -20,7 +20,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>          " Close the current buffer
 nmap <leader>bl :ls<CR>                     " List all open buffers and their status
 
 " Mappings for ag.vim
-nmap <leader>a :Ag!<space> 
+nmap <leader>a :Ag! 
 
 " Toggables
 nnoremap <F5> :NERDTreeToggle<CR>
@@ -31,6 +31,9 @@ nnoremap <leader><space> :nohlsearch<CR>    " Manually turn off search highlight
 " Open .*rc files
 nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <leader>eb :e ~/.bashrc<CR>
+
+" Open other config files
+nnoremap <leader>em :e ~/.vim/startup/mappings.vim<CR>
 
 " Custom comma motion mappings
 nmap di, f,dT,
