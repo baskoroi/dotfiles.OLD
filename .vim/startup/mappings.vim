@@ -1,8 +1,3 @@
-" Important keys (Normal mode, leader key, etc.)
-" inoremap jk <esc>
-" inoremap <esc> <nop>
-let mapleader = ","
-
 " Unmap the arrow keys
 no <down> ddp
 no <left> <Nop>
