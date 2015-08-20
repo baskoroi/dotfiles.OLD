@@ -58,11 +58,18 @@ set incsearch
 set hlsearch
 
 " Backup
-" set backup
-" set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-" set backupskip=/tmp/*,/private/tmp/*
-" set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-" set writebackup
+set undodir=~/.vim/tmp/undo//
+set backupdir=~/.vim/tmp/backup//
+set directory=~/.vim/tmp/swap//
+set backupskip=/tmp/*,/private/tmp/*"
+set backup
+set writebackup
+set noswapfile
+
+" Persist (g)undo tree between sessions
+set undofile
+set history=100
+set undolevels=100
 
 " ================
 " AIRLINE SETTINGS
