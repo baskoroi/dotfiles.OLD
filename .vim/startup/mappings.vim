@@ -29,12 +29,11 @@ nnoremap <F5> :NERDTreeToggle<CR>
 " Mappings for search highlighting (default: enabled)
 nnoremap <leader><space> :nohlsearch<CR>    " Manually turn off search highlighting
 
-" Open .*rc files
+" Open (and source) .*rc files and other config files
 nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <leader>eb :e ~/.bashrc<CR>
-
-" Open other config files
 nnoremap <leader>em :e ~/.vim/startup/mappings.vim<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Custom comma motion mappings
 nmap di, f,dT,

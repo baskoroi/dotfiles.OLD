@@ -59,12 +59,12 @@ set hlsearch
 
 " Backup
 set undodir=~/.vim/tmp/undo//
-set backupdir=~/.vim/tmp/backup//
-set directory=~/.vim/tmp/swap//
-set backupskip=/tmp/*,/private/tmp/*"
-set backup
-set writebackup
-set noswapfile
+" set backupdir=~/.vim/tmp/backup//
+" set directory=~/.vim/tmp/swap//
+" set backupskip=/tmp/*,/private/tmp/*
+" set backup
+" set writebackup
+" set noswapfile
 
 " Persist (g)undo tree between sessions
 set undofile
