@@ -19,8 +19,10 @@ Plugin 'VundleVim/Vundle.vim'
 " vim main plugins
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
+
 filetype plugin indent on
 
 " ============
