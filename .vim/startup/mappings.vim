@@ -23,6 +23,7 @@ nmap <leader>bl :ls<CR>                     " List all open buffers and their st
 nmap <leader>a :Ag! 
 
 " Toggables
+nnoremap <F4> :GundoToggle<CR>
 nnoremap <F5> :NERDTreeToggle<CR>
 
 " Mappings for search highlighting (default: enabled)
