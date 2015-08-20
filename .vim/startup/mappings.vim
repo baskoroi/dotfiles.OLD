@@ -13,14 +13,14 @@ vno <right> <Nop>
 vno <up> <Nop>
 
 " Mappings for vim-airline
-nmap <leader>T :enew<CR>                    " Open a new buffer / tab 
-nmap <leader>l :bnext<CR>                   " Move to the next buffer
-nmap <leader>h :bprev<CR>                   " Move to the previous buffer
-nmap <leader>bq :bp <BAR> bd #<CR>          " Close the current buffer
-nmap <leader>bl :ls<CR>                     " List all open buffers and their status
+nnoremap <leader>T :enew<CR>                    " Open a new buffer / tab 
+nnoremap <leader>l :bnext<CR>                   " Move to the next buffer
+nnoremap <leader>h :bprev<CR>                   " Move to the previous buffer
+nnoremap <leader>bq :bp <BAR> bd #<CR>          " Close the current buffer
+nnoremap <leader>bl :ls<CR>                     " List all open buffers and their status
 
 " Mappings for ag.vim
-nmap <leader>a :Ag! 
+nnoremap <leader>a :Ag! 
 
 " Toggables
 nnoremap <F4> :GundoToggle<CR>
