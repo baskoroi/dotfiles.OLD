@@ -74,3 +74,24 @@ imap <Leader>" ""<ESC>i
 imap <Leader>( ()<ESC>i
 imap <Leader>[ []<ESC>i
 imap <Leader>{ {}<ESC>i
+
+" WRAPPING word(s) in 'quotes', [brackets], etc.
+" 1. In normal mode: for selections from either sides
+nnoremap <leader>w' viw<esc>bi'<esc>ea'<esc>
+nnoremap <leader>w" viw<esc>bi"<esc>ea"<esc>
+nnoremap <leader>w( viw<esc>bi(<esc>ea)<esc>
+nnoremap <leader>w[ viw<esc>bi[<esc>ea]<esc>
+" 2. In visual mode: For forward selections (from left to right)
+vnoremap <leader>w' <esc>i'<esc>hv`<vi'<esc>
+vnoremap <leader>w" <esc>i"<esc>hv`<vi"<esc>
+vnoremap <leader>w( <esc>i)<esc>hv`<vi(<esc>
+vnoremap <leader>w) <esc>i)<esc>hv`<vi(<esc>
+vnoremap <leader>w[ <esc>i]<esc>hv`<vi[<esc>
+vnoremap <leader>w] <esc>i]<esc>hv`<vi[<esc>
+" 3. In visual mode: For backward selections (from right to left)
+vnoremap <leader>b' <esc>i'<esc>v`><esc>ea'<esc>
+vnoremap <leader>b" <esc>i"<esc>v`><esc>ea"<esc>
+vnoremap <leader>b( <esc>i(<esc>v`><esc>ea)<esc>
+vnoremap <leader>b) <esc>i(<esc>v`><esc>ea)<esc>
+vnoremap <leader>b[ <esc>i[<esc>v`><esc>ea]<esc>
+vnoremap <leader>b] <esc>i[<esc>v`><esc>ea]<esc>
