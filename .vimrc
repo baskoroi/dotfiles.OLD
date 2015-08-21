@@ -1,11 +1,11 @@
-" INITIAL SETTINGS ----------------------------------------- {{{
+" INITIAL SETTINGS {{{
 
 set nocompatible			" get rid of Vi compability mode.
 filetype off				" required
 
 " }}}
 
-" PLUGIN SETTINGS ------------------------------------------ {{{
+" PLUGIN SETTINGS {{{
 
 " Vundle settings and plugins
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -28,7 +28,7 @@ filetype plugin indent on
 
 " }}}
 
-" VIM SETTINGS ---------------------------------------------- {{{
+" VIM SETTINGS {{{
 
 " Filetypes
 filetype plugin on
@@ -84,7 +84,7 @@ set undolevels=100
 
 " }}}
 
-" vim-airline SETTINGS -------------------------------------------------------- {{{
+" vim-airline SETTINGS {{{
 
 set laststatus=2                            " to display the Airline
 let g:airline_powerline_fonts = 1           " patched fonts
@@ -106,7 +106,7 @@ set hidden
 
 " }}}
 
-" ctrl+p SETTINGS --------------------------------------------------------- {{{
+" ctrl+p SETTINGS {{{
 
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
@@ -114,13 +114,13 @@ let g:ctrlp_switch_buffer = 0
 
 " }}}
 
-" ag.vim SETTINGS --------------------------------------------------------- {{{
+" ag.vim SETTINGS {{{
 
 let g:ag_working_path_mode="r"
 
 " }}}
 
-" CUSTOM SETTINGS --------------------------------------------------------- {{{
+" CUSTOM SETTINGS {{{
 
 source ~/.vim/startup/mappings.vim
 
