@@ -1,13 +1,11 @@
-" ================
-" INITIAL SETTINGS
-" ================
+" INITIAL SETTINGS ----------------------------------------- {{{
 
 set nocompatible			" get rid of Vi compability mode.
 filetype off				" required
 
-" ===============
-" PLUGIN SETTINGS
-" ===============
+" }}}
+
+" PLUGIN SETTINGS ------------------------------------------ {{{
 
 " Vundle settings and plugins
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -28,9 +26,9 @@ call vundle#end()
 
 filetype plugin indent on
 
-" ============
-" VIM SETTINGS
-" ============
+" }}}
+
+" VIM SETTINGS ---------------------------------------------- {{{
 
 " Filetypes
 filetype plugin on
@@ -57,6 +55,12 @@ set showmatch
 set incsearch
 set hlsearch
 
+" Folding
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
 " Abbreviations (and typo fixes)
 :iabbrev bsk Baskoro Indrayana
 :iabbrev @@ baskoroindrayana@outlook.com
@@ -78,9 +82,9 @@ set undofile
 set history=100
 set undolevels=100
 
-" ================
-" AIRLINE SETTINGS
-" ================
+" }}}
+
+" vim-airline SETTINGS -------------------------------------------------------- {{{
 
 set laststatus=2                            " to display the Airline
 let g:airline_powerline_fonts = 1           " patched fonts
@@ -100,22 +104,24 @@ let g:airline#extensions#tabline#enabled = 1
 " Hide modified buffers
 set hidden
 
-" ===============
-" CTRL P SETTINGS
-" ===============
+" }}}
+
+" ctrl+p SETTINGS --------------------------------------------------------- {{{
 
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 " let g:ctrlp_working_path_mode = 0
 
-" ===============
-" ag.vim SETTINGS
-" ===============
+" }}}
+
+" ag.vim SETTINGS --------------------------------------------------------- {{{
 
 let g:ag_working_path_mode="r"
 
-" ===============
-" CUSTOM SETTINGS
-" ===============
+" }}}
+
+" CUSTOM SETTINGS --------------------------------------------------------- {{{
 
 source ~/.vim/startup/mappings.vim
+
+" }}}
