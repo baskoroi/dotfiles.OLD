@@ -62,8 +62,6 @@ augroup filetype_vim
 augroup END
 
 " Abbreviations (and typo fixes)
-:iabbrev bsk Baskoro Indrayana
-:iabbrev @@ baskoroindrayana@outlook.com
 :iabbrev ture true
 :iabbrev flase false
 :iabbrev falase false
@@ -123,5 +121,6 @@ let g:ag_working_path_mode="r"
 " CUSTOM SETTINGS {{{
 
 source ~/.vim/startup/mappings.vim
+source ~/.vim/startup/grep-operator.vim
 
 " }}}

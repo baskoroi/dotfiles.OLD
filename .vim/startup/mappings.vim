@@ -30,8 +30,9 @@ nnoremap <F4> :GundoToggle<CR>
 nnoremap <F5> :NERDTreeToggle<CR>
 " }}}
 
-" Mappings for search highlighting (default: enabled) {{{
+" Mappings for searching {{{
 nnoremap <leader><space> :nohlsearch<CR>    " Manually turn off search highlighting
+" nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen 10<cr>
 " }}}
 
 " Open (and source) .*rc files and other config files {{{
@@ -85,6 +86,7 @@ imap <Leader>" ""<ESC>i
 imap <Leader>( ()<ESC>i
 imap <Leader>[ []<ESC>i
 imap <Leader>{ {}<ESC>i
+imap <Leader>< <><ESC>i
 " }}}
 
 " WRAPPING word(s) in 'quotes', [brackets], etc. {{{
