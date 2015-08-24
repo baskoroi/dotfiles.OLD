@@ -28,11 +28,38 @@ nnoremap <leader>a :Ag!
 " Toggables {{{
 nnoremap <F4> :GundoToggle<CR>
 nnoremap <F5> :NERDTreeToggle<CR>
+
+nnoremap <leader>f :call FoldColumnToggle()<cr>
+
+function! FoldColumnToggle()
+    if &foldcolumn
+        setlocal foldcolumn=0
+    else
+        setlocal foldcolumn=1
+    endif
+endfunction
+
+nnoremap <leader>q :call QuickFixToggle()<CR>
+
+let g:quickfix_is_open = 0
+
+function! QuickFixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+        execute g:quickfix_return_to_window . "wincmd w"
+    else
+        let g:quickfix_return_to_window = winnr()
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
 " }}}
 
 " Mappings for searching {{{
 nnoremap <leader><space> :nohlsearch<CR>    " Manually turn off search highlighting
 " nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen 10<cr>
+
 " }}}
 
 " Open (and source) .*rc files and other config files {{{
