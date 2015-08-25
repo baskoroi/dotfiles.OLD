@@ -23,6 +23,9 @@ Plugin 'rking/ag.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
@@ -117,6 +120,13 @@ let g:ctrlp_switch_buffer = 0
 " ag.vim SETTINGS {{{
 
 let g:ag_working_path_mode="r"
+
+" }}}
+
+" EMMET SETTINGS {{{
+
+let g:user_emmet_mode='a'
+let g:user_emmet_leader_key='<C-Z>'
 
 " }}}
 
