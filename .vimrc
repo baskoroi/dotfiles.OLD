@@ -14,17 +14,19 @@ call vundle#begin()
 " Core plugins
 Plugin 'VundleVim/Vundle.vim'
 
-" vim main plugins
+" vim main plugins / vundles
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
 Plugin 'sjl/gundo.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
+
+" language vundles
+Plugin 'scrooloose/syntastic'
+Plugin 'mattn/emmet-vim'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
 
 call vundle#end()
@@ -127,6 +129,12 @@ let g:ag_working_path_mode="r"
 
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-Z>'
+
+" }}}
+
+" LANGUAGE SETTINGS (including plugins / vundles) {{{
+
+let g:javascript_enable_domhtmlcss = 1
 
 " }}}
 

@@ -97,6 +97,7 @@ alias ....='cd ../../..'
 # other user-defined aliases
 alias tmux='tmux -2'
 alias o='xdg-open'
+alias torb='cd ~/Downloads/tor-browser_en-US/; ./start-tor-browser.desktop; cd'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
