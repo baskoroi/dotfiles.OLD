@@ -53,7 +53,7 @@ set expandtab
 
 " UI settings 
 set cursorline
-colorscheme candyman 
+colorscheme badwolf
 set wildmenu
 set lazyredraw
 set showmatch
