@@ -98,6 +98,7 @@ alias ....='cd ../../..'
 alias tmux='tmux -2'
 alias o='xdg-open'
 alias torb='cd ~/Downloads/tor-browser_en-US/; ./start-tor-browser.desktop; cd'
+alias lamppmanager='sudo /opt/lampp/manager-linux-x64.run'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -138,3 +139,5 @@ export TERM="xterm-256color"
 
 # For t (CLI to-do list)
 alias t='python ~/other-repos/t/t.py --task-dir ~/tasks --list tasks'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
