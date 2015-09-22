@@ -99,8 +99,11 @@ alias tmux='tmux -2'
 alias o='xdg-open'
 alias torb='cd ~/Downloads/tor-browser_en-US/; ./start-tor-browser.desktop; cd'
 alias lamppmanager='sudo /opt/lampp/manager-linux-x64.run'
-alias dotamouse='xset m 21/12 0'
-alias normalmouse='xset m 1 0'
+alias androidstudio='sudo /opt/android-studio/studio_no_ibus.sh; sudo /opt/android-studio/bin/studio.sh'
+alias genymotion='sudo /opt/genymotion/genymotion'
+
+# other user-defined configurations
+xset m 1.2 0              # mouse sensitivity
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
