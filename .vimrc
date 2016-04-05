@@ -26,7 +26,7 @@ Plugin 'terryma/vim-multiple-cursors'
 " language vundles
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
 
 call vundle#end()
@@ -43,6 +43,7 @@ filetype indent on
 
 " Syntax
 syntax on
+autocmd BufNewFile,BufRead *.md     set syntax=markdown
 
 " General settings
 set relativenumber
@@ -128,7 +129,9 @@ let g:ag_working_path_mode="r"
 " EMMET SETTINGS {{{
 
 let g:user_emmet_mode='a'
-let g:user_emmet_leader_key='<C-Z>'
+" let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 " }}}
 

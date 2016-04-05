@@ -146,3 +146,6 @@ export TERM="xterm-256color"
 alias t='python ~/other-repos/t/t.py --task-dir ~/tasks --list tasks'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="/home/bask/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
