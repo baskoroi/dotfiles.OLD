@@ -116,12 +116,17 @@ imap <Leader>{ {}<ESC>i
 imap <Leader>< <><ESC>i
 " }}}
 
-" WRAPPING word(s) in 'quotes', [brackets], etc. {{{
+" WRAPPING word(s) in 'quotes', [brackets], etc. (still needs improvement) {{{
 " 1. In normal mode: for selections from either sides
 nnoremap <leader>w' viw<esc>bi'<esc>ea'<esc>
 nnoremap <leader>w" viw<esc>bi"<esc>ea"<esc>
 nnoremap <leader>w( viw<esc>bi(<esc>ea)<esc>
 nnoremap <leader>w[ viw<esc>bi[<esc>ea]<esc>
+
+"" for Markdown files
+nnoremap <C-b> viw<esc>bi**<esc>ea**<esc>
+nnoremap <C-i> viw<esc>bi_<esc>ea_<esc>
+
 " 2. In visual mode: For forward selections (from left to right)
 vnoremap <leader>w' <esc>i'<esc>hv`<vi'<esc>
 vnoremap <leader>w" <esc>i"<esc>hv`<vi"<esc>
@@ -129,6 +134,11 @@ vnoremap <leader>w( <esc>i)<esc>hv`<vi(<esc>
 vnoremap <leader>w) <esc>i)<esc>hv`<vi(<esc>
 vnoremap <leader>w[ <esc>i]<esc>hv`<vi[<esc>
 vnoremap <leader>w] <esc>i]<esc>hv`<vi[<esc>
+
+"" for Markdown files
+vnoremap <C-b> <esc>i**<esc>hv`<vi**<esc>
+vnoremap <C-i> <esc>i_<esc>hv`<vi_<esc>
+
 " 3. In visual mode: For backward selections (from right to left)
 vnoremap <leader>b' <esc>i'<esc>v`><esc>ea'<esc>
 vnoremap <leader>b" <esc>i"<esc>v`><esc>ea"<esc>
@@ -136,4 +146,8 @@ vnoremap <leader>b( <esc>i(<esc>v`><esc>ea)<esc>
 vnoremap <leader>b) <esc>i(<esc>v`><esc>ea)<esc>
 vnoremap <leader>b[ <esc>i[<esc>v`><esc>ea]<esc>
 vnoremap <leader>b] <esc>i[<esc>v`><esc>ea]<esc>
+
+"" for Markdown files
+vnoremap <C-b> <esc>i**<esc>v`><esc>ea**<esc>
+vnoremap <C-i> <esc>i_<esc>v`><esc>ea_<esc>
 " }}}
