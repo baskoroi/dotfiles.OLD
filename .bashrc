@@ -95,6 +95,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # other user-defined aliases
+alias tm='tmux -2'
 alias tmux='tmux -2'
 alias o='xdg-open'
 alias torb='cd ~/Downloads/tor-browser_en-US/; ./start-tor-browser.desktop; cd'

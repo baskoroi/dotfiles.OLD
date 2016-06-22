@@ -1,37 +1,59 @@
 " INITIAL SETTINGS {{{
 
-set nocompatible			" get rid of Vi compability mode.
+" set nocompatible			" get rid of Vi compability mode.
 filetype off				" required
 
 " }}}
 
-" PLUGIN SETTINGS {{{
+" PLUGIN SETTINGS (Vundle - uncomment when needed) {{{
 
 " Vundle settings and plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
 " Core plugins
-Plugin 'VundleVim/Vundle.vim'
+"Plugin 'VundleVim/Vundle.vim'
 
-" vim main plugins / vundles
-Plugin 'flazz/vim-colorschemes'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'rking/ag.vim'
-Plugin 'sjl/gundo.vim'
-Plugin 'terryma/vim-multiple-cursors'
+" vim main plugins 
+"Plugin 'flazz/vim-colorschemes'
+"Plugin 'bling/vim-airline'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'rking/ag.vim'
+"Plugin 'sjl/gundo.vim'
+"Plugin 'terryma/vim-multiple-cursors'
 
 " language vundles
-Plugin 'scrooloose/syntastic'
-Plugin 'mattn/emmet-vim'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-commentary'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'mattn/emmet-vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'tpope/vim-commentary'
 
-call vundle#end()
+"call vundle#end()
 
-filetype plugin indent on
+"filetype plugin indent on
+
+" }}}
+
+" PLUGIN SETTINGS (vim-plug) {{{
+
+call plug#begin('~/.vim/bundle')
+
+Plug 'flazz/vim-colorschemes'
+Plug 'bling/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'rking/ag.vim'
+Plug 'sjl/gundo.vim'
+Plug 'terryma/vim-multiple-cursors'
+
+" language plugins
+Plug 'benekastah/neomake'
+Plug 'mattn/emmet-vim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'tpope/vim-commentary'
+
+call plug#end()
 
 " }}}
 
@@ -129,7 +151,7 @@ let g:ag_working_path_mode="r"
 " EMMET SETTINGS {{{
 
 let g:user_emmet_mode='a'
-" let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_leader_key='<C-Z>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
